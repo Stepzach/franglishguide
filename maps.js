@@ -44,6 +44,7 @@ export function createGuideMap(container, {center, zoom, onError} = {}) {
 export function addPlaceMarker(map, place, onClick) {
   const element = document.createElement('div');
   element.className = 'map-pin';
+  element.dataset.type = place.type;
   const pin = document.createElement(onClick ? 'button' : 'span');
   pin.className = 'place-pin';
   pin.innerHTML = '<svg viewBox="0 0 24 28" aria-hidden="true"><path class="pin-shape" d="M12 26S21 17.6 21 11a9 9 0 0 0-18 0c0 6.6 9 15 9 15Z"/><circle class="pin-dot" cx="12" cy="11" r="3"/></svg>';

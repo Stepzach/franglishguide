@@ -18,7 +18,7 @@ In this repository’s **Settings → Pages**, choose **Deploy from a branch**, 
 
 ## Edit the guide
 
-- `places.js`: places, photos, addresses and English notes.
+- `places.js`: places, category types, photos, addresses and English notes.
 - `i18n.js`: French translations and interface labels.
 - `style.css`: layout and appearance.
 - `app.js`: list, language switches, place pages and comments.
