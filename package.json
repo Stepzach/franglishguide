@@ -1,0 +1,9 @@
+{
+  "name": "franglish-guide",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "check": "node --check app.js && node --check social.js && node --check places.js && node --check i18n.js && node --check maps.js"
+  }
+}
