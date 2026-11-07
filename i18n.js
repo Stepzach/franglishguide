@@ -4,7 +4,7 @@ const french = {
   'Choose a city':'Choisir une ville', 'Choose a language':'Choisir une langue', 'View':'Affichage',
   'Restaurant guide':'Guide des bonnes adresses', 'Filter by type':'Filtrer par type',
   'All':'Tout', 'Restaurants':'Restaurants', 'Brunch':'Brunch',
-  'Bakeries':'Boulangeries', 'Takeaway':'À emporter',
+  'Bakeries':'Boulangeries', 'Takeaway':'À emporter', 'Sweet treats':'Desserts',
   'Places on a map':'Les adresses sur la carte', 'Restaurant map':'Carte des adresses',
   'Explore the map':'Explorer la carte', 'Show all places':'Voir toutes les adresses',
   'Map unavailable. You can still browse every place in the list.':'Carte indisponible. Toutes les adresses restent accessibles dans la liste.',
@@ -18,7 +18,6 @@ const french = {
   'View {name} photo {number}':'Voir la photo {number} de {name}',
   'No places found.':'Aucune adresse pour le moment.', 'Try another type of place.':'Essayez une autre catégorie.',
   'Explore all places':'Voir toutes les adresses',
-  'Starting with one good find. More London spots to come.':'Une première bonne adresse. D’autres à Londres bientôt.',
   'That’s the list for now. More good meals to come.':'C’est tout pour le moment. D’autres bonnes adresses bientôt.',
   'Previous photo':'Photo précédente', 'Next photo':'Photo suivante',
   'Tube':'Métro', 'Directions':'Itinéraire', 'Find a branch':'Trouver une adresse', 'Website':'Site web',
@@ -47,6 +46,7 @@ const french = {
   'Posting…':'Publication…', 'Comment posted.':'Commentaire publié.',
   'Couldn’t post. Please try again.':'Impossible de publier. Réessayez.',
   'Zoom in':'Zoomer', 'Zoom out':'Dézoomer',
+  'Frozen yogurt':'Yaourt glacé', 'Comfort food':'Cuisine réconfortante',
   'French':'Français', 'Japanese':'Japonais', 'Bakery':'Boulangerie',
   'Ethiopian & Eritrean':'Éthiopien et érythréen', 'Italian':'Italien', 'Mexican-Japanese':'Mexicain-japonais',
   'Multiple locations':'Plusieurs adresses', 'Multiple locations across Paris':'Plusieurs adresses à Paris',
@@ -54,6 +54,16 @@ const french = {
 };
 
 const notes = {
+  'yo-chi': {
+    description:'De très bons yaourts glacés, plein de garnitures et des prix étonnamment doux pour Notting Hill.',
+    review:'8,5/10. De très bons yaourts glacés avec un choix incroyable de garnitures. Étonnamment abordable pour le quartier, avec un espace agréable à l’étage et une ambiance animée.',
+    note:'La queue peut être longue aux heures de pointe, mais elle avance vite.',
+  },
+  'ferdi': {
+    description:'Une cuisine simple et réconfortante à des prix raisonnables. À essayer : le mac and cheese et le burger.',
+    review:'8/10. Une cuisine simple, réconfortante et vraiment bonne à des prix raisonnables. Le mac and cheese et le burger sont excellents.',
+    note:'Une terrasse chauffée très agréable.',
+  },
   'le-phalsbourg': {
     description:'Une vraie cuisine française, avec des produits sourcés en France. L’ardoise change chaque jour.',
     review:'Un dîner 10/10. On a partagé une côte de bœuf. Une cuisine française authentique et de grande qualité. J’y retournerai.',

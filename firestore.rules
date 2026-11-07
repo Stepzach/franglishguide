@@ -3,7 +3,7 @@ service cloud.firestore {
   match /databases/{database}/documents {
     function aTableSignedIn() { return request.auth != null; }
     function aTableKnownPlace(place) {
-      return place in ['le-phalsbourg','la-cantine-lourmel','kome-kome','season-marais','land-and-monkeys','adulis','carbonis','maker-jeuneurs','los-mochis'];
+      return place in ['le-phalsbourg','la-cantine-lourmel','kome-kome','season-marais','land-and-monkeys','adulis','carbonis','maker-jeuneurs','los-mochis','yo-chi','ferdi'];
     }
     match /atablePlaces/{place}/likes/{uid} {
       allow read: if aTableKnownPlace(place);
