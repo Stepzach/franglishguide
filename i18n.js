@@ -27,7 +27,7 @@ const french = {
   'Couldn’t load comments. Try again in a moment.':'Impossible de charger les commentaires. Réessayez dans un instant.',
   'Comments are coming soon.':'Les commentaires arrivent bientôt.', 'Sending…':'Envoi…',
   'Delete your comment':'Supprimer votre commentaire', 'Delete':'Supprimer',
-  'Been here? Leave a note.':'Vous connaissez ? Laissez un commentaire.',
+  'Been here? leave a note':'Laissez un commentaire?',
   'Couldn’t load comments. Please reopen this place to try again.':'Impossible de charger les commentaires. Rouvrez cette fiche pour réessayer.',
   'Food guide':'Guide gourmand', 'Link copied.':'Lien copié.', 'Share this place.':'Partager cette adresse.',
   'Copy the link to {name}.':'Copiez le lien vers {name}.', 'Share link':'Lien à partager', 'Copy link':'Copier le lien',
@@ -57,17 +57,17 @@ const french = {
 const notes = {
   'yo-chi': {
     description:'De très bons yaourts glacés, plein de garnitures et des prix étonnamment doux pour Notting Hill.',
-    review:'8,5/10. De très bons yaourts glacés avec un choix incroyable de garnitures. Étonnamment abordable pour le quartier, avec un espace agréable à l’étage et une ambiance animée.',
+    review:'De très bons yaourts glacés avec un choix incroyable de garnitures. Étonnamment abordable pour le quartier, avec un espace agréable à l’étage et une ambiance animée.',
     note:'La queue peut être longue aux heures de pointe, mais elle avance vite.',
   },
   'ferdi': {
     description:'Une cuisine simple et réconfortante à des prix raisonnables. À essayer : le mac and cheese et le burger.',
-    review:'8/10. Une cuisine simple, réconfortante et vraiment bonne à des prix raisonnables. Le mac and cheese et le burger sont excellents.',
+    review:'Une cuisine simple, réconfortante et vraiment bonne à des prix raisonnables. Le mac and cheese et le burger sont excellents.',
     note:'Une terrasse chauffée très agréable.',
   },
   'le-phalsbourg': {
     description:'Une vraie cuisine française, avec des produits sourcés en France. L’ardoise change chaque jour.',
-    review:'Un dîner 10/10. On a partagé une côte de bœuf. Une cuisine française authentique et de grande qualité. J’y retournerai.',
+    review:'On a partagé une côte de bœuf. Une cuisine française authentique et de grande qualité. J’y retournerai.',
     note:'Une nouvelle ardoise chaque jour.', priceNote:'Comptez au moins 30 € par personne.',
   },
   'la-cantine-lourmel': {
@@ -87,7 +87,7 @@ const notes = {
   },
   'adulis': {
     description:'Calme, chaleureux et accueillant. Une cuisine éthiopienne et érythréenne à partager.',
-    review:'On a partagé un plateau d’injera et du vin éthiopien. Très bon, et le propriétaire était adorable. 8/10.',
+    review:'On a partagé un plateau d’injera et du vin éthiopien. Très bon, et le propriétaire était adorable.',
     note:'Une bonne adresse pour un dîner tranquille.',
   },
   'carbonis': {
