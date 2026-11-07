@@ -101,7 +101,8 @@ h2, h3, strong { font-weight: 600; }
 .icon-button { width: 40px; height: 40px; flex: 0 0 40px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 9px; }
 .icon-button svg { width: 22px; height: 22px; }
 .like-button.liked svg { fill: #ed2949; stroke: #ed2949; }
-.social-count { font-size: 16px; font-weight: 500; margin-left: 7px; white-space: nowrap; flex-shrink: 0; }
+.like-button { position: relative; }
+.social-count { position: absolute; left: calc(50% + 13px); top: 50%; transform: translateY(-50%); font-size: 16px; line-height: 1; font-weight: 500; white-space: nowrap; pointer-events: none; }
 .social-count:empty { display: none; }
 .map-panel { min-width: 0; position: sticky; top: 94px; }
 .map-shell { height: 285px; position: relative; border: 1px solid var(--line); border-radius: 9px; overflow: hidden; background: #f7f7f5; }
