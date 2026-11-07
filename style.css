@@ -293,7 +293,7 @@ body.modal-open { overflow: hidden; }
 }
 
 @media (min-width: 761px)  {
-detail-category {
+.detail-category {
   padding-right: 40px;
 }
   }
