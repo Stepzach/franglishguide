@@ -1,4 +1,5 @@
 const french = {
+  "Zach's Frenglish Guide":"Guide Franglish de Zach",
   'London':'Londres', 'List':'Liste', 'Map':'Carte',
   'Skip to places':'Voir les adresses', 'Guide controls':'Options du guide',
   'Choose a city':'Choisir une ville', 'Choose a language':'Choisir une langue', 'View':'Affichage',
@@ -83,11 +84,6 @@ const notes = {
     description:'Pancakes, œufs, avocat et salades. Une bonne adresse pour le petit-déjeuner ou le déjeuner dans le Marais.',
     review:'Un peu touristique, mais on y mange bien. La terrasse est parfaite quand il fait beau.',
     note:'Sans réservation.',
-  },
-  'land-and-monkeys': {
-    description:'Une boulangerie 100 % végétale avec de très bonnes viennoiseries, pâtisseries, sandwichs et du café.',
-    review:'Étonnamment bon, avec beaucoup de choix et de places assises. Il y a des boutiques un peu partout dans Paris.',
-    note:'Des boutiques dans les 1er, 3e, 4e, 9e arrondissements, entre autres.',
   },
   'adulis': {
     description:'Calme, chaleureux et accueillant. Une cuisine éthiopienne et érythréenne à partager.',

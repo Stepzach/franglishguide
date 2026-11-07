@@ -67,7 +67,17 @@ h2, h3, strong { font-weight: 600; }
 .chip.selected { border-color: #000; font-weight: 600; }
 .content-layout { display: grid; grid-template-columns: minmax(0,1fr) 300px; gap: 26px; align-items: start; }
 .results { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
-.place-card { display: grid; grid-template-columns: minmax(0,1fr) 160px; align-items: start; gap: 20px; border: 1px solid var(--line); border-radius: 5px; padding: 20px 18px; background: var(--category-color, var(--paper)); border-color: #0000000d; }
+.place-card, .selected-place {
+  --wash-x: 45%;
+  --wash-y: 46%;
+  --wash-tail-x: 64%;
+  --wash-tail-y: 60%;
+  --card-wash: radial-gradient(ellipse 43% 43% at var(--wash-x) var(--wash-y), var(--category-color, #fff) 0% 38%, transparent 100%), radial-gradient(ellipse 34% 38% at var(--wash-tail-x) var(--wash-tail-y), var(--category-color, #fff) 0% 28%, transparent 100%), #fff;
+  background: var(--card-wash);
+}
+.place-card { display: grid; grid-template-columns: minmax(0,1fr) 160px; align-items: start; gap: 20px; border: 0; border-radius: 0; padding: 20px 18px; }
+.place-card:nth-child(3n + 2) { --wash-x: 50%; --wash-y: 49%; --wash-tail-x: 36%; --wash-tail-y: 40%; }
+.place-card:nth-child(3n) { --wash-x: 46%; --wash-y: 53%; --wash-tail-x: 62%; --wash-tail-y: 39%; }
 .photo-pair { grid-column: 2; grid-row: 1; position: relative; width: 160px; height: 200px; align-self: center; }
 .card-photo { position: absolute; top: 0; left: 0; display: block; width: 104px; aspect-ratio: 9 / 10; padding: 0; overflow: hidden; border-radius: 5px; }
 .card-photo:nth-child(2) { top: auto; left: auto; right: 0; bottom: 0; width: 132px; aspect-ratio: 10 / 9; }
@@ -114,7 +124,7 @@ footer { max-width: 1120px; margin: auto; padding: 24px 0 32px; border-top: 1px 
 .map-mode .map-shell { height: 610px; }
 .map-mode .map-panel { position: sticky; top: 94px; }
 .map-mode .map-expand { display: none; }
-.map-mode .is-selected { border-color: #000; }
+.map-mode .is-selected .place-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .map-pin { width: 44px; height: 44px; background: none; border: 0; }
 .place-pin { display: flex; align-items: flex-end; justify-content: center; width: 44px; height: 44px; padding: 0; color: #000; background: none; border: 0; border-radius: 8px; transform-origin: bottom center; }
 .place-pin svg { width: 30px; height: 38px; stroke-width: 1.5; filter: drop-shadow(0 2px 3px #0002); }
@@ -132,7 +142,7 @@ footer { max-width: 1120px; margin: auto; padding: 24px 0 32px; border-top: 1px 
 .maplibregl-ctrl-top-left .maplibregl-ctrl { margin: 12px 0 0 12px; }
 .map-credits { font-size: 16px; font-weight: 300; line-height: 1.3; margin-top: 7px; text-align: right; }
 .map-error { position: absolute; inset: 55px 20px; z-index: 501; background: #fffffff5; border-radius: 8px; padding: 20px; font-size: 18px; line-height: 1.4; }
-.selected-place { display: flex; align-items: center; text-align: left; gap: 12px; width: 100%; margin-top: 12px; border: 1px solid #00000012; background: var(--category-color, #fff); padding: 13px; border-radius: 7px; }
+.selected-place { display: flex; align-items: center; text-align: left; gap: 12px; width: 100%; margin-top: 12px; border: 0; padding: 13px; border-radius: 0; }
 .selected-place img { width: 62px; height: 62px; object-fit: cover; border-radius: 3px; }
 .selected-place strong { display: block; font-size: 21px; margin-bottom: 5px; }
 .selected-place small { font-size: 16px; font-weight: 300; }
@@ -269,7 +279,8 @@ body.modal-open { overflow: hidden; }
 
 @media (min-width: 761px) and (hover: hover) {
   button:hover { background: var(--tint); }
-  .chip:hover, .selected-place:hover { background: var(--category-color); border-color: #0006; }
+  .chip:hover { background: var(--category-color); border-color: #0006; }
+  .selected-place:hover { background: var(--card-wash); }
   a:hover { text-decoration: underline; text-underline-offset: 3px; }
   .card-photo:hover { background: none; }
   .place-title:hover { background: none; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }

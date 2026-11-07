@@ -26,7 +26,7 @@ function filtered(){return places.filter(p=>p.city===state.city&&(state.category
 function updateURL(){const u=new URL(location.href);u.search='';u.searchParams.set('lang',getLanguage());if(state.city!=='paris')u.searchParams.set('city',state.city);if(state.view==='map')u.searchParams.set('view','map');if(state.category!=='all')u.searchParams.set('category',state.category);if(detailId)u.searchParams.set('place',detailId);history.replaceState(null,'',u)}
 
 
-function render(){translatePage();const list=filtered();document.title=`${state.city==='paris'?'Paris':t('London')} · Guide Franglish de Zach`;
+function render(){translatePage();const list=filtered();document.title=`${state.city==='paris'?'Paris':t('London')} · ${t("Zach's Frenglish Guide")}`;
 $('#results').innerHTML=list.length?list.map(card).join(''):`<div class="empty"><h3>${t('No places found.')}</h3><p>${t('Try another type of place.')}</p><button data-reset>${t('Explore all places')}</button></div>`;
 $('.guide').classList.toggle('map-mode',state.view==='map');document.querySelectorAll('[data-city]').forEach(b=>{b.classList.toggle('selected',b.dataset.city===state.city);b.setAttribute('aria-pressed',b.dataset.city===state.city)});document.querySelectorAll('[data-view]').forEach(b=>{b.classList.toggle('selected',b.dataset.view===state.view);b.setAttribute('aria-pressed',b.dataset.view===state.view)});document.querySelectorAll('[data-category]').forEach(b=>{b.classList.toggle('selected',b.dataset.category===state.category);b.setAttribute('aria-pressed',b.dataset.category===state.category)});
 $('#end-note').textContent=t('That’s the list for now. More good meals to come.');
