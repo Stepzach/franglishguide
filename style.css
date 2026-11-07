@@ -291,6 +291,12 @@ body.modal-open { overflow: hidden; }
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
 
+@media (min-width: 761px)  {
+detail-category {
+  padding-right: 40px;
+}
+  }
+
 @media (min-width: 761px) and (hover: hover) {
   button:hover { background: var(--tint); }
   .chip:hover { background: var(--category-color); border-color: #0006; }
