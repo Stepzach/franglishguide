@@ -52,7 +52,8 @@ h2, h3, strong { font-weight: 600; }
 .site-heading { padding: 26px 20px 12px; background: #fff; text-align: center; }
 .site-heading h1 { font-size: 28px; font-weight: 500; line-height: 1.2; letter-spacing: -.25px; }
 .topbar { background: #fffffff5; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 600; backdrop-filter: blur(12px); }
-.nav-inner { max-width: 1120px; min-height: 74px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.nav-inner { max-width: 1120px; min-height: 74px; margin: auto; display: flex; align-items: center; gap: 16px; }
+.language-switch { margin-left: auto; }
 .segment-switch { display: flex; flex-shrink: 0; gap: 2px; border: 1px solid var(--line); background: #f4f4f4; padding: 3px; border-radius: 9px; }
 .segment-switch button { white-space: nowrap; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 9px 13px; font-size: 17px; line-height: 1.2; font-weight: 400; border-radius: 6px; }
 .segment-switch .selected { background: #fff; font-weight: 600; box-shadow: 0 1px 3px #0000000d; }
