@@ -101,7 +101,7 @@ h2, h3, strong { font-weight: 600; }
 .icon-button { width: 40px; height: 40px; flex: 0 0 40px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 9px; }
 .icon-button svg { width: 22px; height: 22px; }
 .like-button.liked svg { fill: #ed2949; stroke: #ed2949; }
-.like-button { position: relative; }
+.like-button, .comment-button { position: relative; }
 .social-count { position: absolute; left: calc(50% + 13px); top: 50%; transform: translateY(-50%); font-size: 16px; line-height: 1; font-weight: 500; white-space: nowrap; pointer-events: none; }
 .social-count:empty { display: none; }
 .map-panel { min-width: 0; position: sticky; top: 94px; }
@@ -115,6 +115,7 @@ h2, h3, strong { font-weight: 600; }
 .map-fit svg { width: 19px; height: 19px; }
 .end-note { text-align: center; font-size: 16px; font-weight: 300; padding: 40px 0; }
 .end-note svg { width: 20px; height: 20px; stroke-width: 1.25; margin-bottom: 9px; }
+.contact-email { text-decoration: underline; text-underline-offset: 3px; }
 footer { max-width: 1120px; margin: auto; padding: 24px 0 32px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 18px; font-size: 16px; font-weight: 300; }
 .text-button { font-size: 16px; padding: 8px 0; font-weight: 500; }
 .empty { border: 1px dashed #c8c0b5; border-radius: 7px; padding: 35px 20px; text-align: center; }
